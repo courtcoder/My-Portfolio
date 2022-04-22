@@ -7,8 +7,8 @@
 /* VARIABLES */
 :root {
     --text-color: white;
-    --secondary-color: #ffa94d;
-    --tertiary-color: pink;
+    --secondary-color: #d4ff00;
+    --tertiary-color: #ff0084;
     --background-color: black;
     --teal: #00ffd0;
 }
@@ -16,7 +16,7 @@
 /* HEADER / NAV BAR STYLES */
 header {
     padding: 20px 35px;
-    background-color: var(--background-color);
+    background-color: black;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -24,14 +24,14 @@ header {
     position: -webkit-sticky;
     top: 0;
     z-index: 9999;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--text-color);
 }
 
 header h1 {
     font-weight: bold;
-    margin: 0;
-    margin-bottom: 0;
+    margin: 10px;
+    margin-bottom: 10px;
     font-size: 65px;
     color: var(--text-color);
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
@@ -42,6 +42,51 @@ header a {
     color: var(--teal);
 }
 
+header nav {
+    margin: 5px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:baseline;
+    list-style:none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 25px;
+}
+
 header p {
     color: var(--tertiary-color);
+    font-style: italic;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-items: center;
+    font-size: 25px;
 }
+
+.hero {
+    background-image:url(../images/background.jpeg);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hero h2 {
+color: var(--secondary-color);
+font-size: 25px;
+text-decoration: underline solid;
+}
+
+.hero p {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
